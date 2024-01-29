@@ -3,7 +3,7 @@
 Project Pro is a collaborative project management application that allows you to efficiently manage projects while working synchronously with different team members. It is built using the MERN stack (MongoDB, Express, React, Node.js) and integrates socket.io for real-time communication.
 
 ## Deployed live here:
-Check out the live demo [here]([https://super-chimera-e2f223.netlify.app/](https://projectpro-frontend.vercel.app/).
+Check out the live demo [[here](https://projectpro-frontend.vercel.app/)]
 
 ## Test Account
 Username: test@test.com
