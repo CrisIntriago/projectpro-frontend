@@ -15,7 +15,7 @@ const Registrar = () => {
 
         if([nombre, email, password, repetirPassword].includes('')) {
            setAlerta({
-               msg: 'Todos los campos son obligatorios',
+               msg: 'All fields are mandatory',
                error: true
            })
            return
@@ -23,7 +23,7 @@ const Registrar = () => {
 
         if(password !== repetirPassword ) {
             setAlerta({
-                msg: 'Los password no son iguales',
+                msg: 'Passwords are not equal',
                 error: true
             })
             return
@@ -31,7 +31,7 @@ const Registrar = () => {
 
         if(password.length < 6 ) {
             setAlerta({
-                msg: 'El Password es muy corto, agrega minimo 6 caracteres',
+                msg: 'The password is too short, add a minimum of 6 characters',
                 error: true
             })
             return
@@ -64,8 +64,8 @@ const Registrar = () => {
 
   return (
     <>
-        <h1 className="text-sky-600 font-black text-6xl capitalize">Crea tu Cuenta y Administra tus {''}
-            <span className="text-slate-700">proyectos</span>
+        <h1 className="text-sky-600 font-black text-6xl capitalize">"Create your account and manage your {''}
+            <span className="text-slate-700">projects.</span>
         </h1>
 
         { msg && <Alerta alerta={alerta} /> }
@@ -78,7 +78,7 @@ const Registrar = () => {
                 <label 
                     className="uppercase text-gray-600 block text-xl font-bold"
                     htmlFor="nombre"
-                >Nombre</label>
+                >Name</label>
                 <input
                     id="nombre"
                     type="text"
@@ -97,7 +97,7 @@ const Registrar = () => {
                 <input
                     id="email"
                     type="email"
-                    placeholder="Email de Registro"
+                    placeholder="Email"
                     className="w-full mt-3 p-3 border rounded-xl bg-gray-50"
                     value={email}
                     onChange={e => setEmail(e.target.value)}
@@ -111,7 +111,7 @@ const Registrar = () => {
                 <input
                     id="password"
                     type="password"
-                    placeholder="Password de Registro"
+                    placeholder="Password"
                     className="w-full mt-3 p-3 border rounded-xl bg-gray-50"
                     value={password}
                     onChange={e => setPassword(e.target.value)}
@@ -122,11 +122,11 @@ const Registrar = () => {
                 <label 
                     className="uppercase text-gray-600 block text-xl font-bold"
                     htmlFor="password2"
-                >Repetir Password</label>
+                >Repeat Password</label>
                 <input
                     id="password2"
                     type="password"
-                    placeholder="Repetir tu Password"
+                    placeholder="Repeat password"
                     className="w-full mt-3 p-3 border rounded-xl bg-gray-50"
                     value={repetirPassword}
                     onChange={e => setRepetirPassword(e.target.value)}
@@ -135,7 +135,7 @@ const Registrar = () => {
 
             <input 
                 type="submit"
-                value="Crear Cuenta"
+                value="Create Account"
                 className="bg-sky-700 mb-5 w-full py-3 text-white uppercase font-bold rounded hover:cursor-pointer hover:bg-sky-800 transition-colors"
             />
             
@@ -145,12 +145,12 @@ const Registrar = () => {
             <Link 
                 className='block text-center my-5 text-slate-500 uppercase text-sm'
                 to="/"
-            >¿Ya tienes una cuenta? Inicia Sesión</Link>
+            >"Do you already have an account? Log in</Link>
 
             <Link 
                 className='block text-center my-5 text-slate-500 uppercase text-sm'
                 to="/olvide-password"
-            >Olvide Mi Password</Link>
+            >I forgot my password.</Link>
         </nav>
     
     </>
