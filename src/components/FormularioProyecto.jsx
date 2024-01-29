@@ -65,7 +65,7 @@ const FormularioProyecto = () => {
                             id="nombre"
                             type="text"
                             className="border w-full p-2 mt-2 placeholder-gray-400 rounded-md"
-                            placeholder="Nombre del Proyecto"
+                            placeholder="Project Name"
                             value={nombre}
                             onChange={e => setNombre(e.target.value)}
                         />
@@ -80,7 +80,7 @@ const FormularioProyecto = () => {
                         <textarea
                             id="descripcion"
                             className="border w-full p-2 mt-2 placeholder-gray-400 rounded-md"
-                            placeholder="Descripción del Proyecto"
+                            placeholder="Project Description"
                             value={descripcion}
                             onChange={e => setDescripcion(e.target.value)}
                         />
@@ -111,7 +111,7 @@ const FormularioProyecto = () => {
                             id="cliente"
                             type="text"
                             className="border w-full p-2 mt-2 placeholder-gray-400 rounded-md"
-                            placeholder="Nombre del Cliente"
+                            placeholder="Client's Name"
                             value={cliente}
                             onChange={e => setCliente(e.target.value)}
                         />
@@ -119,7 +119,7 @@ const FormularioProyecto = () => {
 
                     <input
                         type="submit"
-                        value={id ? 'Actualizar Proyecto': 'Crear Proyecto'}
+                        value={id ? 'Update Project': 'Create Project'}
                         className='bg-sky-600 w-full p-3 uppercase font-bold text-white rounded cursor-pointer hover:bg-sky-700 transition-colors'
                     />
             </form>

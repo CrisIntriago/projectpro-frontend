@@ -64,7 +64,7 @@ const Registrar = () => {
 
   return (
     <>
-        <h1 className="text-sky-600 font-black text-6xl capitalize">"Create your account and manage your {''}
+        <h1 className="text-sky-600 font-black text-6xl capitalize">Create your account and manage your {''}
             <span className="text-slate-700">projects.</span>
         </h1>
 
@@ -82,7 +82,7 @@ const Registrar = () => {
                 <input
                     id="nombre"
                     type="text"
-                    placeholder="Tu Nombre"
+                    placeholder="Your Name"
                     className="w-full mt-3 p-3 border rounded-xl bg-gray-50"
                     value={nombre}
                     onChange={e => setNombre(e.target.value)}
@@ -126,7 +126,7 @@ const Registrar = () => {
                 <input
                     id="password2"
                     type="password"
-                    placeholder="Repeat password"
+                    placeholder="Repeat Password"
                     className="w-full mt-3 p-3 border rounded-xl bg-gray-50"
                     value={repetirPassword}
                     onChange={e => setRepetirPassword(e.target.value)}
@@ -145,7 +145,7 @@ const Registrar = () => {
             <Link 
                 className='block text-center my-5 text-slate-500 uppercase text-sm'
                 to="/"
-            >"Do you already have an account? Log in</Link>
+            >Do you already have an account? Log in</Link>
 
             <Link 
                 className='block text-center my-5 text-slate-500 uppercase text-sm'

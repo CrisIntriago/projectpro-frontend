@@ -12,20 +12,20 @@ const EditarProyecto = () => {
     }, [])
 
     const handleClick = () => {
-        if(confirm('¿Deseas eliminar este proyecto?')) {
+        if(confirm('¿Do you want to delete this project?')) {
             eliminarProyecto(params.id)
         } 
     }
   
     const { nombre } = proyecto
 
-    if(cargando) return 'Cargando...'
+    if(cargando) return 'Loading...'
 
     return (
         <>
           
               <div className='flex justify-between'>
-                <h1 className='font-black text-4xl'>Editar Proyecto: {nombre}</h1>
+                <h1 className='font-black text-4xl'>Edit Project: {nombre}</h1>
 
                   <div className='flex items-center gap-2 text-gray-400 hover:text-black'>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -34,7 +34,7 @@ const EditarProyecto = () => {
                     <button
                         className='uppercase font-bold'
                         onClick={handleClick}
-                    >Eliminar</button>
+                    >Delete</button>
                   </div>
               </div>
 
