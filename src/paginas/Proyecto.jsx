@@ -72,7 +72,7 @@ const Proyecto = () => {
                 <Link 
                   to={`/proyectos/editar/${params.id}`}
                   className='uppercase font-bold'
-                >Editar</Link>
+                >Edit</Link>
               </div>
             )}
           </div>
