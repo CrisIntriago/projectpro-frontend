@@ -29,7 +29,7 @@ const FormularioProyecto = () => {
 
         if([nombre, descripcion, fechaEntrega, cliente].includes('') ) {
             mostrarAlerta({
-                msg: 'Todos los Campos son Obligatorios',
+                msg: 'All fields are mandatory.',
                 error: true
             })
 
@@ -59,7 +59,7 @@ const FormularioProyecto = () => {
                         <label
                             className="text-gray-700 uppercase font-bold text-sm"
                             htmlFor="nombre"
-                        >Nombre Proyecto</label>
+                        >Project Name</label>
 
                         <input
                             id="nombre"
@@ -75,7 +75,7 @@ const FormularioProyecto = () => {
                         <label
                             className="text-gray-700 uppercase font-bold text-sm"
                             htmlFor="descripcion"
-                        >Descripción</label>
+                        >Description</label>
 
                         <textarea
                             id="descripcion"
@@ -90,7 +90,7 @@ const FormularioProyecto = () => {
                         <label
                             className="text-gray-700 uppercase font-bold text-sm"
                             htmlFor="fecha-entrega"
-                        >Fecha Entrega</label>
+                        >Due date</label>
 
                         <input
                             id="fecha-entrega"
@@ -105,7 +105,7 @@ const FormularioProyecto = () => {
                         <label
                             className="text-gray-700 uppercase font-bold text-sm"
                             htmlFor="cliente"
-                        >Nombre Cliente</label>
+                        >Client's Name</label>
 
                         <input
                             id="cliente"

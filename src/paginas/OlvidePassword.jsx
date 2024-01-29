@@ -13,7 +13,7 @@ const OlvidePassword = () => {
 
         if(email === '' || email.length < 6) {
             setAlerta({
-                msg: 'El Email es obligatorio',
+                msg: 'Email is mandatory.',
                 error: true
             });
             return
@@ -41,8 +41,8 @@ const OlvidePassword = () => {
 
     return (
         <>
-            <h1 className="text-sky-600 font-black text-6xl capitalize">Recupera tu acceso y no pierdas tus {''}
-                <span className="text-slate-700">proyectos</span>
+            <h1 className="text-sky-600 font-black text-6xl capitalize">Recover your access and don't lose your{''}
+                <span className="text-slate-700">projects</span>
             </h1>
 
             { msg && <Alerta alerta={alerta} />}
@@ -61,7 +61,7 @@ const OlvidePassword = () => {
                     <input
                         id="email"
                         type="email"
-                        placeholder="Email de Registro"
+                        placeholder="Email"
                         className="w-full mt-3 p-3 border rounded-xl bg-gray-50"
                         value={email}
                         onChange={ e => setEmail(e.target.value)}
@@ -71,7 +71,8 @@ const OlvidePassword = () => {
 
                 <input 
                     type="submit"
-                    value="Enviar Instrucciones"
+                    value="Send instructions
+                    "
                     className="bg-sky-700 mb-5 w-full py-3 text-white uppercase font-bold rounded hover:cursor-pointer hover:bg-sky-800 transition-colors"
                 />
                 
@@ -81,12 +82,12 @@ const OlvidePassword = () => {
                 <Link 
                     className='block text-center my-5 text-slate-500 uppercase text-sm'
                     to="/"
-                >¿Ya tienes una cuenta? Inicia Sesión</Link>
+                >Do you already have an account? Log in.</Link>
 
                 <Link 
                     className='block text-center my-5 text-slate-500 uppercase text-sm'
                     to="/registrar"
-                >¿No tienes una cuenta? Regístrate</Link>
+                >Don't have an account? Sign up.</Link>
             </nav>
 
         </>

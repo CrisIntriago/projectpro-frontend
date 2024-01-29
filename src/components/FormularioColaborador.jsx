@@ -12,7 +12,7 @@ const FormularioColaborador = () => {
 
     if(email === '') {
         mostrarAlerta({
-          msg: 'El Email es Obligatorio',
+          msg: 'The email is mandatory.',
           error: true
         })
         return
@@ -35,7 +35,7 @@ const FormularioColaborador = () => {
               className='text-gray-700 uppercase font-bold text-sm' 
               htmlFor='email'
           >
-              Email Colaborador
+              Email Collaborator
           </label>
           <input
               type="email"

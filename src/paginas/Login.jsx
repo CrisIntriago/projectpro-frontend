@@ -63,7 +63,7 @@ const Login = () => {
                 <input
                     id="email"
                     type="email"
-                    placeholder="Email de Registro"
+                    placeholder="Email"
                     className="w-full mt-3 p-3 border rounded-xl bg-gray-50"
                     value={email}
                     onChange={ e => setEmail(e.target.value)}
@@ -77,7 +77,7 @@ const Login = () => {
                 <input
                     id="password"
                     type="password"
-                    placeholder="Password de Registro"
+                    placeholder="PlaceHolder"
                     className="w-full mt-3 p-3 border rounded-xl bg-gray-50"
                     value={password}
                     onChange={ e => setPassword(e.target.value)}
@@ -86,7 +86,7 @@ const Login = () => {
 
             <input 
                 type="submit"
-                value="Iniciar Sesión"
+                value="Log In"
                 className="bg-sky-700 mb-5 w-full py-3 text-white uppercase font-bold rounded hover:cursor-pointer hover:bg-sky-800 transition-colors"
             />
             
@@ -96,12 +96,12 @@ const Login = () => {
             <Link 
                 className='block text-center my-5 text-slate-500 uppercase text-sm'
                 to="/registrar"
-            >¿No tienes una cuenta? Regístrate</Link>
+            >Don't have an account? Sign up</Link>
 
             <Link 
                 className='block text-center my-5 text-slate-500 uppercase text-sm'
                 to="/olvide-password"
-            >Olvide Mi Password</Link>
+            >Forgot my password</Link>
         </nav>
     
     </>

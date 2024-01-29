@@ -55,7 +55,7 @@ const Proyecto = () => {
   })
 
   const { nombre } = proyecto
-  if(cargando) return 'Cargando...'
+  if(cargando) return 'Loading...'
   const { msg } = alerta
 
 
@@ -86,12 +86,12 @@ const Proyecto = () => {
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd" />
               </svg>
-              Nueva Tarea
+              New Task
             </button>
           )}
 
 
-            <p className='font-bold text-xl mt-10'>Tareas del Proyecto</p>
+            <p className='font-bold text-xl mt-10'>Project Tasks</p>
 
 
             <div className='bg-white shadow mt-10 rounded-lg'>
@@ -102,17 +102,17 @@ const Proyecto = () => {
                       tarea={tarea}
                     />
                   )) : 
-                <p className='text-center my-5 p-10'>No hay tareas en este proyecto</p>}
+                <p className='text-center my-5 p-10'>There are no tasks in this project</p>}
             </div>
             
             {admin && (
               <>
                 <div className='flex items-center justify-between mt-10'>
-                    <p className='font-bold text-xl'>Colaboradores</p>
+                    <p className='font-bold text-xl'>Collaborators</p>
                     <Link
                       to={`/proyectos/nuevo-colaborador/${proyecto._id}`}
                       className='text-gray-400 hover:text-black uppercase font-bold'
-                    >Añadir</Link>
+                    >Add</Link>
                 </div>
 
                 <div className='bg-white shadow mt-10 rounded-lg'>
@@ -123,7 +123,7 @@ const Proyecto = () => {
                               colaborador={colaborador}
                           />
                       )) : 
-                    <p className='text-center my-5 p-10'>No hay Colaboradores en este proyecto</p>}
+                    <p className='text-center my-5 p-10'>There are no collaborators in this project</p>}
                 </div>
               </>
             )}
